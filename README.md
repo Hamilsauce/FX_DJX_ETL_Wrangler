@@ -1,7 +1,9 @@
 # FX_DJX_ETL_Wrangler
-ETL application that automatically consumes 3rd party REST API for Alpha Vantage financial data, data ingests and wrangles and pushes as SQL into AWS RDS PostgreSQL database. Intended for use in AWS serverless Lambda environment (on NodeJS).
+ETL application that automatically consumes 3rd party REST API (via HTTP request) for Alpha Vantage financial data, data ingests and wrangles and pushes as SQL into AWS RDS PostgreSQL database. Intended for use in AWS serverless Lambda environment (on NodeJS).
 
 Utilises Mailgun to automatically sent out 'success' email.
+
+Utilises JSON-SQL ORM for conversion of JSON to SQL structured data for RDBMS ingestion. Later version intended to include Sequelize ORM.
 
 # External Links
 For more information about Alpha Vantage, please visit their website: https://www.alphavantage.co/
